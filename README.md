@@ -63,12 +63,15 @@ Copy `.env.example` to `.env` and fill in the values. See each subdirectory for 
 | Branch    | Purpose                              |
 |-----------|--------------------------------------|
 | `main`    | Production — deploys to prod         |
-| `develop` | Staging — deploys to staging         |
+| `staging` | Staging — deploys to staging         |
+| `develop` | Development — active feature work    |
 | Feature   | `feature/*` → PR to `develop`        |
+| Release   | `develop` → PR to `staging`          |
 | Hotfix    | `hotfix/*` → PR to `main`            |
 
 <!-- Branch protection rules:
 - main: Require PR review, require CI pass, no force push
+- staging: Require PR review, require CI pass, no force push
 - develop: Require CI pass, no force push
 -->
 
