@@ -32,6 +32,10 @@ const config: Config = {
           foreground: "hsl(var(--accent-foreground))",
         },
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
