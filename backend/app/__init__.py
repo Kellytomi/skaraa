@@ -1,0 +1,1 @@
+"""Skaraa backend application."""

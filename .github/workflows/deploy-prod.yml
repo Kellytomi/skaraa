@@ -1,0 +1,27 @@
+name: Deploy Production
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Deploy frontend to Vercel production
+      - run: echo "TODO — Deploy frontend to Vercel production"
+
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Deploy backend to Railway or Fly.io production
+      - run: echo "TODO — Deploy backend to Railway/Fly production"
+
+  deploy-workers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Deploy workers to Modal production
+      - run: echo "TODO — Deploy Modal workers to production"

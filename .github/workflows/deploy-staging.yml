@@ -1,0 +1,35 @@
+name: Deploy Staging
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Deploy frontend to Vercel
+      # - uses: amondnet/vercel-action@v25
+      #   with:
+      #     vercel-token: ${{ secrets.VERCEL_TOKEN }}
+      #     vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+      #     vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+      - run: echo "TODO — Deploy frontend to Vercel staging"
+
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Deploy backend to Railway or Fly.io
+      # - uses: railwayapp/github-cli@v1
+      #   with:
+      #     railway-token: ${{ secrets.RAILWAY_TOKEN }}
+      - run: echo "TODO — Deploy backend to Railway/Fly staging"
+
+  deploy-workers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # TODO: Deploy workers to Modal
+      - run: echo "TODO — Deploy Modal workers to staging"

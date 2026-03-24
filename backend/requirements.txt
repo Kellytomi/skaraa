@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+supabase
+redis
+httpx
+python-multipart
+librosa
+rubberband-cli
+stripe
+alembic
+sqlalchemy
+asyncpg
+python-jose[cryptography]

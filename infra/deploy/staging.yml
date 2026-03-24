@@ -1,0 +1,19 @@
+# Staging deployment configuration
+# TODO: Configure staging environment
+
+environment: staging
+
+frontend:
+  # TODO: Vercel deployment config
+  platform: vercel
+  project_name: skaraa-staging
+
+backend:
+  # TODO: Railway/Fly.io deployment config
+  platform: railway
+  service_name: skaraa-api-staging
+
+workers:
+  # TODO: Modal deployment config
+  platform: modal
+  environment: staging

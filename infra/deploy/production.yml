@@ -1,0 +1,19 @@
+# Production deployment configuration
+# TODO: Configure production environment
+
+environment: production
+
+frontend:
+  # TODO: Vercel deployment config
+  platform: vercel
+  project_name: skaraa
+
+backend:
+  # TODO: Railway/Fly.io deployment config
+  platform: railway
+  service_name: skaraa-api
+
+workers:
+  # TODO: Modal deployment config
+  platform: modal
+  environment: production
